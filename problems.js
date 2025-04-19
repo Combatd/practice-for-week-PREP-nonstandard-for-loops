@@ -40,9 +40,10 @@ function secondPower(arr) {
 function nthPower(arr, n) {
     // Return an array containing all indices that are powers of n
     const powersOfN = [];
-
-    for (let i = 0; i < arr.length; i += n) {
-      powersOfN.push[arr[i]];
+    let base = n;
+    for (let i = 1; i < arr.length; i *= base) {
+      currentPower = arr[i];
+      powersOfN.push(currentPower);
     }
 
     return powersOfN;
