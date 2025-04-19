@@ -66,6 +66,14 @@ function secondHalf(arr) {
     // Return an array containing the second half of an array
     // Exclude middle index on odd length arr
     // Your code here
+    const secondHalfArr = [];
+
+    for (let i = arr.length - 1; i >= arr.length / 2; i--) {
+      let currentElement = arr[i];
+      secondHalfArr.push(currentElement);
+    }
+
+    return secondHalfArr;
 }
 
 module.exports = {
