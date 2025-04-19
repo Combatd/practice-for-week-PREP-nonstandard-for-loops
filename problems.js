@@ -39,13 +39,27 @@ function secondPower(arr) {
 
 function nthPower(arr, n) {
     // Return an array containing all indices that are powers of n
-    // Your code here
+    const powersOfN = [];
+
+    for (let i = 0; i < arr.length; i += n) {
+      powersOfN.push[arr[i]];
+    }
+
+    return powersOfN;
 }
 
 function firstHalf(arr) {
     // Return an array containing the first half of an array
     // Include middle index on odd length arr
     // Your code here
+    const firstHalfArr = [];
+
+    for (let i = 0; i < arr.length / 2; i++) {
+      let currentElement = arr[i];
+      firstHalfArr.push(currentElement);
+    }
+
+    return firstHalfArr;
 }
 
 function secondHalf(arr) {
